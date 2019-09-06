@@ -1,0 +1,125 @@
+
+main {
+     min-height: 100vh;
+     font-size: 1em;
+     
+     
+ }
+
+ h1 {
+     margin: 50px auto;
+     padding: 20px;
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 900;
+     font-size: 4em;
+     text-transform: uppercase;
+     background: black;
+     color: white;
+ }
+
+ h2, #score {
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 900;
+     font-size: 2em;
+ }
+
+
+.container {
+  display: flex;
+  flex: 1;
+  min-height: 30vh;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.btn {
+    background: transparent;
+    box-sizing: border-box;
+    border: 10px solid black;
+    border-radius: 8px;
+    font: Arial;
+    font-weight: 900;
+    font-size: 115%;
+    text-align: center;
+    transition-duration: 0.4s; 
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 2%;
+    margin:  5%;
+    width: 30%;   
+}
+
+.btn:hover {
+    background: black;
+    color: #fff;  
+}
+
+.computerchoice, 
+#computerchoice
+ {
+    
+    box-sizing: border-box;
+    border: 10px solid black;
+    border-radius: 8px;
+    font: Arial;
+    font-weight: 900;
+    font-size: 115%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2%;
+    margin:  5% auto;
+    width: 30%; 
+    display: none;
+  
+}
+
+.container-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    
+}
+.reset-btn {
+
+        background: transparent;
+        box-sizing: border-box;
+        border: 6px solid red;
+        border-radius: 8px;
+        font: Arial;
+        font-weight: 700;
+        font-size: 90%;
+        text-align: center;
+        transition-duration: 0.4s; 
+        cursor: pointer;
+        text-transform: uppercase;
+        padding: 2%;
+        margin:  5%;
+        width: 12%;
+        
+    }
+    
+    .reset-btn:hover {
+        background: red;
+        color: #fff;  
+    }
+}
+
+.winner{
+    display: none;
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .btn, .reset-btn {
+        max-width: 100%;
+        font-size: 70%;
+        margin: 1%;
+    }  
+    
+}
